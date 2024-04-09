@@ -1,0 +1,65 @@
+GET http://localhost:3000/states/
+
+###
+
+GET http://localhost:3000/states/3/
+
+###
+
+POST http://localhost:3000/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+GET http://localhost:3000/districts/755/
+
+###
+
+DELETE http://localhost:3000/districts/772/
+
+###
+
+PUT http://localhost:3000/districts/755/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+GET http://localhost:3000/states/8/stats/
+
+###
+
+GET http://localhost:3000/districts/346/details/
+
+###
+
+GET http://localhost:3000/districts/
+
+
+###
+
+{ "districtId": 755,
+    "districtName": "Nadia",
+    "stateId": 36,
+    "cases": 22816,
+    "cured": 22424,
+    "active": 72,
+    "deaths": 320
+}
